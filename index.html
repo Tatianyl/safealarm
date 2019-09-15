@@ -1,49 +1,181 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
 	<title>SafeAlarm</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<style>
 
-		* {
-			-webkit-box-sizing: border-box;
-			-moz-box-sizing: border-box;
-			box-sizing: border-box;   
-		}
+</head>
+<body>
 
-		body {
-			margin: 0px;
-			/*font-family: 'Roboto',sans-serif,Tahoma;*/
-			font-family: 'Open Sans', sans-serif;
-			/*background: #EAEBED;*/
-			background: none;
-			overflow-x: hidden;
-			/*text-shadow: 1px 1px 1px #aaa;*/
-			min-width: 910px;
-			color: #4F5D73 !important;
-		}
+	<div class="mainComponente" id="header">
+		<div id="header_logo" ><img src="img/locked.png"></div>
+		<div id="header_texto">
+			<h1>SafeAlarm</h1>
+			<h3>Sistema de gestão de segurança</h3>
+		</div>
+	</div>
 
-		.blink_me {
-			animation: blinker 1s linear infinite;
-		}
+	<div class="menuCinza">
+		<nav class="mainComponent navbar navbar-expand-lg navbar-light bg-light">
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Principais características <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Diferenciais</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Cases</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contato</a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Busca" aria-label="Busca">
+					<button class="btn btn-danger" type="submit">Buscar</button>
+				</form>
+			</div>
+		</nav>
+	</div>
+
+	<!--<div class="mainComponent menu">
+		<div class="ativo">Principais caraterísticas</div>
+		<div>Diferenciais</div>
+		<div>Cases</div>
+		<div>Contato</div>
+	</div>-->
+
+	<div class="mainComponent">
+		<div class="tituloPagina">
+			<h2> Principais características do SafeAlarm </h2>
+		</div>
+	</div>
+
+	<!-- <marquee class="blink_me">Tags mais divertidas da Rede Mundial de Computadores.</marquee> -->
+	<div class="mainComponent">
+		<div class="card-group">
+			<div class="card">
+				<div class="icone">
+					<img src="img/lens.png" class="card-img-top" alt="...">
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">Integração com CFTV</h5>
+					<p class="card-text">A nossa solução de alarme interage diretamente com servidores de vídeo e recebe eventos diretamente de periféricos cadastrados.</p>
+					<a href="#" class="btn btn-danger">Saiba mais sobre esse serviço</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="icone">
+					<img src="img/settings.png" class="card-img-top" alt="...">
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">Sistema parametrizável</h5>
+					<p class="card-text">O SafeAlarm se adapta às necessidades do cliente. Seus módulos são construídos para atender diferentes necessidades de operação.</p>
+					<a href="#" class="btn btn-danger">Saiba mais sobre esse serviço</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="icone">
+					<img src="img/speedometer.png" class="card-img-top" alt="...">
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">Ferramentas gerenciais</h5>
+					<p class="card-text">O sistema dispõe de Dashboard customizável, mostrando para os gestores e lideres as informações necessárias para a tomada de decisão.</p>
+					<a href="#" class="btn btn-danger">Saiba mais sobre esse serviço</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="mainComponente" id="footer">
+		<div id="footer_texto">
+			<small>SafeAlarm - todos os direitos reservados<small>
+			</div>
+		</div>
+
+
+
+	<!--<div class="mainComponent destaques">
+		<div class="destaque">
+			<div class="fakedivimg"> <img src="img/lens.png"> </div>
+			<h4>Integração com CFTV e Câmeras</h4>
+			<div class="destaqueDescricao">
+				A nossa solução de alarme interage diretamente com servidores de vídeo e recebe eventos diretamente de periféricos cadastrados.
+			</div>
+			<div class="button"> Saber Mais! </div>
+		</div>
+
+		<div class="destaque">
+			<div class="fakedivimg"> <img src="img/settings.png"> </div>
+			<h4>Sistema parametrizável</h4>
+			<div>
+				O SafeAlarm se molda de acordo com as necessidades do cliente. Seus módulos são construídos para atender diferentes necessidade de operação e controle.
+			</div>
+			<div class="button"> Saber Mais! </div>
+		</div>
+
+		<div class="destaque">
+			<div class="fakedivimg"> <img src="img/speedometer.png"> </div>
+			<h4> Ferramentas gerenciais </h4>
+			<div>
+				O sistema dispôe de Dashboard customizável, mostrando para os gestores e lideres as informações necessárias para a tomada de decisão.
+			</div>
+			<div class="button"> Saber Mais! </div>
+		</div>
+	</div>-->
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+
+
+<style>
+
+	* {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;   
+	}
+
+	body {
+		margin: 0px;
+		/*font-family: 'Roboto',sans-serif,Tahoma;*/
+		font-family: 'Open Sans', sans-serif;
+		/*background: #EAEBED;*/
+		background: none;
+		overflow-x: hidden;
+		/*text-shadow: 1px 1px 1px #aaa;*/
+		min-width: 910px;
+		color: #4F5D73 !important;
+	}
+
+	.blink_me {
+		animation: blinker 1s linear infinite;
+	}
+	
+	@keyframes blinker {  
+		50% { opacity: 0; }
+	}
+	
+	.destaque {
+		text-align: center;
+		position: relative;
+		height: 100%;
+	}
+	
+	.destaque img {
 		
-		@keyframes blinker {  
-			50% { opacity: 0; }
-		}
-		
-		.destaque {
-			text-align: center;
-			position: relative;
-			height: 100%;
-		}
-		
-		.destaque img {
-			
-		}
-		
-		.destaque .fakedivimg {
+	}
+	
+	.destaque .fakedivimg {
 		/*box-shadow: 2px 2px 2px #ccc;
 		width: 128px;*/
 		width: 90px;
@@ -329,134 +461,4 @@
 
 
 </style>
-
-</head>
-<body>
-
-	<div class="mainComponente" id="header">
-		<div id="header_logo" ><img src="img/locked.png"></div>
-		<div id="header_texto">
-			<h1>SafeAlarm</h1>
-			<h3>Sistema de gestão de segurança</h3>
-		</div>
-	</div>
-
-	<div class="menuCinza">
-		<nav class="mainComponent navbar navbar-expand-lg navbar-light bg-light">
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">Principais características <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Diferenciais</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Cases</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Contato</a>
-					</li>
-				</ul>
-				<form class="form-inline my-2 my-lg-0">
-					<input class="form-control mr-sm-2" type="search" placeholder="Busca" aria-label="Busca">
-					<button class="btn btn-danger" type="submit">Buscar</button>
-				</form>
-			</div>
-		</nav>
-	</div>
-
-	<!--<div class="mainComponent menu">
-		<div class="ativo">Principais caraterísticas</div>
-		<div>Diferenciais</div>
-		<div>Cases</div>
-		<div>Contato</div>
-	</div>-->
-
-	<div class="mainComponent">
-		<div class="tituloPagina">
-			<h2> Principais características do SafeAlarm </h2>
-		</div>
-	</div>
-
-	<!-- <marquee class="blink_me">Tags mais divertidas da Rede Mundial de Computadores.</marquee> -->
-	<div class="mainComponent">
-		<div class="card-group">
-			<div class="card">
-				<div class="icone">
-					<img src="img/lens.png" class="card-img-top" alt="...">
-				</div>
-				<div class="card-body">
-					<h5 class="card-title">Integração com CFTV</h5>
-					<p class="card-text">A nossa solução de alarme interage diretamente com servidores de vídeo e recebe eventos diretamente de periféricos cadastrados.</p>
-					<a href="#" class="btn btn-danger">Saiba mais sobre esse serviço</a>
-				</div>
-			</div>
-			<div class="card">
-				<div class="icone">
-					<img src="img/settings.png" class="card-img-top" alt="...">
-				</div>
-				<div class="card-body">
-					<h5 class="card-title">Sistema parametrizável</h5>
-					<p class="card-text">O SafeAlarm se adapta às necessidades do cliente. Seus módulos são construídos para atender diferentes necessidades de operação.</p>
-					<a href="#" class="btn btn-danger">Saiba mais sobre esse serviço</a>
-				</div>
-			</div>
-			<div class="card">
-				<div class="icone">
-					<img src="img/speedometer.png" class="card-img-top" alt="...">
-				</div>
-				<div class="card-body">
-					<h5 class="card-title">Ferramentas gerenciais</h5>
-					<p class="card-text">O sistema dispõe de Dashboard customizável, mostrando para os gestores e lideres as informações necessárias para a tomada de decisão.</p>
-					<a href="#" class="btn btn-danger">Saiba mais sobre esse serviço</a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="mainComponente" id="footer">
-		<div id="footer_texto">
-			<small>SafeAlarm - todos os direitos reservados<small>
-			</div>
-		</div>
-
-
-
-	<!--<div class="mainComponent destaques">
-		<div class="destaque">
-			<div class="fakedivimg"> <img src="img/lens.png"> </div>
-			<h4>Integração com CFTV e Câmeras</h4>
-			<div class="destaqueDescricao">
-				A nossa solução de alarme interage diretamente com servidores de vídeo e recebe eventos diretamente de periféricos cadastrados.
-			</div>
-			<div class="button"> Saber Mais! </div>
-		</div>
-
-		<div class="destaque">
-			<div class="fakedivimg"> <img src="img/settings.png"> </div>
-			<h4>Sistema parametrizável</h4>
-			<div>
-				O SafeAlarm se molda de acordo com as necessidades do cliente. Seus módulos são construídos para atender diferentes necessidade de operação e controle.
-			</div>
-			<div class="button"> Saber Mais! </div>
-		</div>
-
-		<div class="destaque">
-			<div class="fakedivimg"> <img src="img/speedometer.png"> </div>
-			<h4> Ferramentas gerenciais </h4>
-			<div>
-				O sistema dispôe de Dashboard customizável, mostrando para os gestores e lideres as informações necessárias para a tomada de decisão.
-			</div>
-			<div class="button"> Saber Mais! </div>
-		</div>
-	</div>-->
-
-
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-</body>
-
 </html>
